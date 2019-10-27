@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">GSLS</string>
+    <string name="api_key">AIzaSyCH5JrgoZ5jXjiKpeu90dP6MS5_zn6jP5Y</string>
+    <string name="server_key">AIzaSyDY03iJz9Ddta8LZVA2igGT2F5AhJUwUTs</string>
+    <string name="browser_key">AIzaSyClbM-J7DtdpPav6cNYBTcQgDojSMk5BQk</string>
+    <string name="enter_city_address_or_code">enter city address or code</string>
+    <string name="forgot_password2">forgot_password2</string>
+    <string name="email_address">email_address</string>
+    <string name="reset">reset</string>
+    <string name="forgot_password">forgot_password</string>
+    <string name="forgot_passwordd">forgot_password?</string>
+    <string name="forgot_passwordds">forgot passwordd</string>
+    <string name="hello">hello</string>
+    <string name="username">username</string>
+    <string name="type_message">type_message</string>
+    <string name="phone_number">phone_number</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_near_by_search">Map</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="title_activity_poly_line">Map</string>
+    <string name="title_activity_map_hotels">Map</string>
+    <string name="title_activity_map_gym">Map</string>
+
+</resources>

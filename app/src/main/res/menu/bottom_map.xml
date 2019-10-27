@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/hotels"
+        android:title="Hotels"
+        android:icon="@drawable/hotel"
+
+        app:showAsAction="always"
+        />
+    <item android:id="@+id/computer"
+        android:title="computer"
+        android:icon="@drawable/computer"
+        app:showAsAction="always"
+        />
+
+    <item android:id="@+id/hospitals"
+        android:icon="@drawable/hospital"
+        android:title="Hospitals"
+        app:showAsAction="always"
+        />
+    <item android:id="@+id/laundry"
+        android:title="Laundry"
+        android:icon="@drawable/laundry"
+        app:showAsAction="always"
+        />
+</menu>

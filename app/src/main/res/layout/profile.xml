@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/proftoolbar"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/z"
+                android:layout_alignParentStart="true"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_chevron_left_black_24dp"
+                android:layout_alignParentLeft="true"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="profile"
+                android:layout_marginStart="40dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="40dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/more"
+                android:layout_marginEnd="20dp"
+                android:onClick="showUp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10"
+            android:gravity="center"
+            android:layout_below="@+id/proftoolbar"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_weight="10"
+                android:columnOrderPreserved="false"
+                android:padding="0dp"
+                android:alignmentMode="alignMargins"
+                android:layout_height="0dp">
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:cardBackgroundColor="@color/background"
+                    android:layout_columnWeight="1"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="1dp"
+                    app:cardCornerRadius="4dp">
+
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profimage"
+                            android:layout_marginTop="0dp"
+                            android:contentDescription="none"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/ttt"/>
+
+                        <TextView
+                            android:id="@+id/profname"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/username"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/profemail"
+                            android:layout_marginTop="40dp"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:text="@string/email_address"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/profname2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/username"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="center_horizontal"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/profphone"
+                            android:layout_width="wrap_content"
+                            android:text="@string/phone_number"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="40dp"
+                            android:layout_height="wrap_content"
+                            android:text="update"
+                            android:id="@+id/updatebtn"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            app:backgroundTint="@color/fbutton_color_nephritis"
+                            android:padding="20dp"
+                            android:shadowRadius="2"/>
+
+
+
+        </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+
+
+            </GridLayout>
+
+        </LinearLayout>
+
+</RelativeLayout>
